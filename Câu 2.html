@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm phần tử mảng</title>
+</head>
+<body>
+<script>
+    let arr = [1, 4, 2, 7, 5, 8, 3]
+
+    function findIndex(a) {
+        let index = -1
+        for (let i = 0; i < arr.length; i++) {
+            if (a === arr[i]) {
+                index = i
+            }
+        }
+        if (index === -1) {
+            alert("Không có trong mảng")
+        } else {
+            return index
+        }
+
+    }
+    document.write(findIndex(5))
+
+</script>
+</body>
+</html>
